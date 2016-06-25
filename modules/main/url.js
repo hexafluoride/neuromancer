@@ -74,7 +74,7 @@ var url = {
               return url.HTMLchars[c] || c
             })
             title = title.replace(/(\r)|(\n)/g, '').replace(/\s+/g, ' ')
-            title = title.slice(0, 80).replace(/(^\s)|(\s$)/g, '')
+            title = title.slice(0, 400).replace(/(^\s)|(\s$)/g, '')
             core.say(from, to, '[\u000310 ' + title + ' \u000f] -\u000304 ' + urllib.parse(link).host)
           } catch (err) {
             if (debug) {
